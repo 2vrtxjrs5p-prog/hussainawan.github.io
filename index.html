@@ -1,129 +1,353 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hussain Awan</title>
-    <meta name="description" content="Hussain Awan is a Harvard Law School graduate, contributor to Harvard Law School's Global Anticorruption Blog, and former clerk to Justice Syed Mansoor Ali Shah at the Supreme Court of Pakistan." />
+    <meta
+      name="description"
+      content="Hussain Awan — Lawyer, Scholar, Mentor. Selected scholarship, writing, and links."
+    />
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Open Graph -->
-    <meta property="og:site_name" content="Hussain Awan" />
     <meta property="og:title" content="Hussain Awan" />
+    <meta property="og:description" content="Lawyer • Scholar • Mentor" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Hussain Awan is a Harvard Law School graduate, contributor to Harvard Law School's Global Anticorruption Blog, and former clerk to Justice Syed Mansoor Ali Shah at the Supreme Court of Pakistan." />
-    <!-- Optional: set this later when domain is live -->
-    <!-- <meta property="og:url" content="https://www.hussainawan.com" /> -->
-
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
-
-    <!-- Optional favicon (replace with your own later) -->
-    <link rel="icon" href="https://assets.squarespace.com/universal/default-favicon.ico" />
+    <!-- Optional: add your live site URL + preview image
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+    -->
   </head>
 
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="./">Hussain Awan</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <nav class="nav">
-          <a href="#my-story">My Story</a>
-          <a href="#scholarship">Scholarship</a>
-          <a href="#mentorship">Mentorship</a>
-          <a href="#contact">Get In Touch</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true">HA</span>
+          <span class="brand-text">Hussain Awan</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a class="nav-strong" href="#scholarship">Scholarship</a>
+          <a href="#links">Links</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <!-- HERO -->
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="container hero-grid">
-          <div class="hero-left">
-            <p class="kicker">Hussain Awan</p>
-            <h1 class="hero-title">
-              <span>Lawyer</span>
-              <span>Teaching Fellow</span>
-              <span>Mentor</span>
-            </h1>
-
-            <p class="hero-bio">
-              Read more on Hussain’s Harvard University page:
-              <a href="https://winthrop.harvard.edu/people/hussain-awan" target="_blank" rel="noopener">winthrop.harvard.edu/people/hussain-awan</a>
+          <div class="hero-copy">
+            <p class="kicker">Lawyer • Scholar • Mentor</p>
+            <h1 id="hero-title">Hussain Awan</h1>
+            <p class="lede">
+              I work at the intersection of litigation, legal scholarship, and mentorship—helping
+              people, institutions, and ideas move forward with clarity and rigor.
             </p>
 
-            <p class="hero-bio">
-              Hussain Awan is a recent graduate of Harvard Law School. He has written on legislative retroactivity, litigation,
-              democratization, religious legal systems, and anticorruption. He is a contributor to Harvard Law School's Global
-              Anticorruption Blog, a Harvard Law School Chayes Fellow, and a former volunteer clerk to Justice Syed Mansoor Ali Shah
-              at the Supreme Court of Pakistan. Awan attended McGill University in Montreal, where he studied International Development
-              and French and graduated as class valedictorian.
-            </p>
-
-            <div class="hero-links">
-              <a class="button" href="https://globalanticorruptionblog.com/hussain-awan/" target="_blank" rel="noopener">Global Anticorruption Blog</a>
-              <a class="button button-outline" href="https://hls.harvard.edu/today/snapshots-from-the-2023-chayes-international-public-service-fellows/" target="_blank" rel="noopener">Chayes Fellowship</a>
-              <a class="button button-outline" href="https://reporter.mcgill.ca/conversations-with-valedictorians-hussain-awan-faculty-of-arts/" target="_blank" rel="noopener">McGill Valedictorian</a>
+            <div class="cta-row">
+              <a class="btn primary" href="#scholarship">View scholarship</a>
+              <a class="btn" href="#contact">Get in touch</a>
             </div>
 
-            <p class="subtle">Harvard Law School</p>
+            <!-- Prominent scholarship preview (shows up high on page) -->
+            <div class="feature-card" role="region" aria-label="Featured scholarship">
+              <div class="feature-top">
+                <span class="pill">Featured Scholarship</span>
+                <span class="muted">Selected work</span>
+              </div>
+              <h2 class="feature-title">
+                <a href="#" target="_blank" rel="noreferrer">
+                  Article Title (Replace Me): A Short, Specific, Searchable Headline
+                </a>
+              </h2>
+              <p class="feature-meta">
+                <span>Journal / Platform</span>
+                <span aria-hidden="true">•</span>
+                <span>Year</span>
+              </p>
+              <p class="feature-desc">
+                One–two sentences that explain the contribution in plain language. Keep it tight,
+                concrete, and skimmable.
+              </p>
+              <div class="feature-actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Read</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer">PDF</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer">Cite</a>
+              </div>
+            </div>
           </div>
 
-          <div class="hero-right">
-            <!-- Replace this with a file you upload into /assets later -->
-            <img
-              class="hero-image"
-              src="https://images.squarespace-cdn.com/content/v1/65b87662560ca56105401186/4725f110-2725-40be-932f-83eca409930a/Screenshot%2B2024-08-30%2Bat%2B12.32.31%E2%80%AFAM-2.png?format=1500w"
-              alt="Portrait"
-              loading="lazy"
-            />
+          <!-- Right rail -->
+          <aside class="hero-rail" aria-label="Highlights">
+            <div class="rail-card">
+              <h2 class="rail-title">Focus</h2>
+              <ul class="rail-list">
+                <li>Public law &amp; civil procedure</li>
+                <li>Administrative law &amp; judicial review</li>
+                <li>Legal research, writing, and advocacy</li>
+              </ul>
+            </div>
+
+            <div class="rail-card">
+              <h2 class="rail-title">Now</h2>
+              <ul class="rail-list">
+                <li>Writing on (topic)</li>
+                <li>Mentoring students and early-career professionals</li>
+                <li>Building practical resources for litigators</li>
+              </ul>
+            </div>
+
+            <div class="rail-card">
+              <h2 class="rail-title">Quick Links</h2>
+              <div class="rail-links">
+                <a href="#" target="_blank" rel="noreferrer">CV (PDF)</a>
+                <a href="#" target="_blank" rel="noreferrer">Google Scholar</a>
+                <a href="#" target="_blank" rel="noreferrer">SSRN</a>
+                <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="about-title">About</h2>
+            <p class="section-subtitle">
+              A short overview of my practice, scholarship, and mentorship.
+            </p>
+          </div>
+
+          <div class="two-col">
+            <div class="card">
+              <h3>Lawyer</h3>
+              <p>
+                Briefly describe what you do (practice areas, courts, clients, types of matters).
+                Emphasize outcomes and how you work.
+              </p>
+              <ul class="bullets">
+                <li>Litigation / motions practice / oral argument</li>
+                <li>Complex research, briefing, and strategy</li>
+                <li>Professional, precise, deadline-driven</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Scholar</h3>
+              <p>
+                Describe your academic interests and what your writing contributes. Keep it specific:
+                the questions you care about, the methods you use, and who your work helps.
+              </p>
+              <ul class="bullets">
+                <li>Doctrinal + practical analysis</li>
+                <li>Clear claims with careful sourcing</li>
+                <li>Bridging theory and practice</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Mentor</h3>
+              <p>
+                Explain who you mentor and how (students, junior professionals, applicants). Mention
+                what people get out of working with you.
+              </p>
+              <ul class="bullets">
+                <li>Writing + interview coaching</li>
+                <li>Career strategy and accountability</li>
+                <li>Supportive, candid feedback</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- SECTIONS -->
-      <section id="my-story" class="section">
+      <!-- SCHOLARSHIP (prominent) -->
+      <section class="section section-accent" id="scholarship" aria-labelledby="scholarship-title">
         <div class="container">
-          <h2>My Story</h2>
-          <p>Add your “My Story” content here.</p>
+          <div class="section-head">
+            <h2 id="scholarship-title">Scholarship</h2>
+            <p class="section-subtitle">
+              Selected publications and works-in-progress. (Replace placeholders with your real
+              citations.)
+            </p>
+          </div>
+
+          <div class="pubs">
+            <!-- Featured again (prominent + redundant visibility by design) -->
+            <article class="pub pub-featured" aria-label="Featured publication">
+              <div class="pub-badge">Featured</div>
+              <h3 class="pub-title">
+                <a href="#" target="_blank" rel="noreferrer">
+                  Article Title (Featured): A Specific Headline That Signals the Core Claim
+                </a>
+              </h3>
+              <p class="pub-meta">Journal / Platform • Year • Coauthors (if any)</p>
+              <p class="pub-desc">
+                Two–three sentences summarizing what you argue and why it matters. Mention the
+                practical implication (how it changes litigation behavior, doctrine, policy, etc.).
+              </p>
+              <div class="pub-actions">
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Read</a>
+                <a class="chip" href="#" target="_blank" rel="noreferrer">PDF</a>
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Cite</a>
+              </div>
+            </article>
+
+            <!-- Regular publications -->
+            <article class="pub">
+              <h3 class="pub-title">
+                <a href="#" target="_blank" rel="noreferrer">
+                  Article Title: Strong Verbs, Concrete Topic, Narrow Scope
+                </a>
+              </h3>
+              <p class="pub-meta">Journal / Platform • Year</p>
+              <p class="pub-desc">One sentence on the thesis. One sentence on the payoff.</p>
+              <div class="pub-actions">
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Read</a>
+                <a class="chip" href="#" target="_blank" rel="noreferrer">PDF</a>
+              </div>
+            </article>
+
+            <article class="pub">
+              <h3 class="pub-title">
+                <a href="#" target="_blank" rel="noreferrer">Essay / Note Title: Short, Sharp, Practical</a>
+              </h3>
+              <p class="pub-meta">Publication • Year</p>
+              <p class="pub-desc">One–two lines describing what a reader learns.</p>
+              <div class="pub-actions">
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Read</a>
+              </div>
+            </article>
+
+            <article class="pub">
+              <h3 class="pub-title">
+                <a href="#" target="_blank" rel="noreferrer">Working Paper: What I’m Writing Next</a>
+              </h3>
+              <p class="pub-meta">Working paper • Expected Year</p>
+              <p class="pub-desc">
+                Briefly frame the question and what evidence/analysis you’re developing.
+              </p>
+              <div class="pub-actions">
+                <a class="chip" href="#" target="_blank" rel="noreferrer">Abstract</a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="scholarship" class="section alt">
+      <!-- LINKS / "NEW" LINKS -->
+      <section class="section" id="links" aria-labelledby="links-title">
         <div class="container">
-          <h2>Scholarship</h2>
-          <p>Add your scholarship writing, publications, and links here.</p>
+          <div class="section-head">
+            <h2 id="links-title">New Links</h2>
+            <p class="section-subtitle">
+              Recent items and resources. (Include your featured scholarship here too.)
+            </p>
+          </div>
+
+          <div class="links-grid">
+            <div class="card">
+              <h3>Featured scholarship</h3>
+              <ul class="linklist">
+                <li>
+                  <a href="#" target="_blank" rel="noreferrer">
+                    Article Title (Featured): A Specific Headline That Signals the Core Claim
+                  </a>
+                  <span class="linknote">Read / PDF / Cite</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Recent writing</h3>
+              <ul class="linklist">
+                <li>
+                  <a href="#" target="_blank" rel="noreferrer">Post / Essay: Topic + why it matters</a>
+                  <span class="linknote">Month Year</span>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noreferrer">Resource: Template / Checklist / Guide</a>
+                  <span class="linknote">Month Year</span>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noreferrer">Talk / Panel: Title</a>
+                  <span class="linknote">Month Year</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Profiles</h3>
+              <ul class="linklist">
+                <li><a href="#" target="_blank" rel="noreferrer">Google Scholar</a></li>
+                <li><a href="#" target="_blank" rel="noreferrer">SSRN</a></li>
+                <li><a href="#" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                <li><a href="#" target="_blank" rel="noreferrer">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="mentorship" class="section">
+      <!-- CONTACT -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
         <div class="container">
-          <h2>Mentorship</h2>
-          <p>Add your mentorship info and how people can work with you here.</p>
-        </div>
-      </section>
+          <div class="section-head">
+            <h2 id="contact-title">Contact</h2>
+            <p class="section-subtitle">
+              For speaking, mentorship, collaboration, or legal writing inquiries.
+            </p>
+          </div>
 
-      <section id="contact" class="section alt">
-        <div class="container">
-          <h2>Get In Touch</h2>
-          <p>
-            Email:
-            <a href="mailto:hello@hussainawan.com">hello@hussainawan.com</a>
-            <!-- replace with your actual email -->
+          <div class="contact-card">
+            <div class="contact-left">
+              <p class="contact-line">
+                <span class="muted">Email</span>
+                <a href="mailto:you@example.com">you@example.com</a>
+              </p>
+              <p class="contact-line">
+                <span class="muted">Location</span>
+                <span>New York, NY (or Remote)</span>
+              </p>
+            </div>
+
+            <div class="contact-right">
+              <a class="btn primary" href="mailto:you@example.com">Email me</a>
+              <a class="btn" href="#top">Back to top</a>
+            </div>
+          </div>
+
+          <p class="fineprint">
+            © <span id="year"></span> Hussain Awan. All rights reserved.
           </p>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" aria-label="Footer">
       <div class="container footer-inner">
-        <span>© <span id="year"></span> Hussain Awan</span>
+        <span class="muted">Lawyer • Scholar • Mentor</span>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#scholarship">Scholarship</a>
+          <a href="#links">Links</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </footer>
 
     <script>
+      // tiny helper (optional)
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>

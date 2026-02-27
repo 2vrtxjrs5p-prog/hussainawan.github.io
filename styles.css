@@ -488,6 +488,19 @@ h1{
   background: rgba(231,237,246,.06);
   text-decoration: none;
 }
+/* Underline links only in the About section body text */
+#about .card p a,
+#about .card p a:visited {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+#about .card p a:hover {
+  text-decoration-thickness: 2px;
+}
+
+
 
 /* ----------------------------
    Responsive

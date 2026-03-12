@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preload" as="image" href="hussain-awan.JPG">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hussain Awan</title>
@@ -105,8 +106,15 @@
 
     <aside class="hero-rail" aria-label="Highlights">
       <div class="rail-card profile-card">
-        <img src="hussain-awan.JPG" alt="Hussain Awan" class="profile-photo">
-      </div>
+        <img
+          src="hussain-awan.JPG"
+          alt="Hussain Awan"
+          class="profile-photo"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          width="900"
+          height="1125">      </div>
 
       <div class="rail-card">
         <h2 class="rail-title">Quick Links</h2>

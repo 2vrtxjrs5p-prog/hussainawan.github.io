@@ -500,6 +500,32 @@ h1{
   text-decoration-thickness: 2px;
 }
 
+.hero-mini-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 8px 0 18px;
+}
+
+.profile-card{
+  padding: 8px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(15,22,33,.96), rgba(12,18,27,.96)) padding-box,
+    linear-gradient(135deg, rgba(125,211,252,.45), rgba(167,139,250,.35)) border-box;
+  border: 1px solid transparent;
+  box-shadow: 0 16px 40px rgba(0,0,0,.28);
+}
+
+.profile-photo{
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 14px;
+}
+
 
 
 /* ----------------------------

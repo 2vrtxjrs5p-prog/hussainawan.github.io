@@ -517,11 +517,10 @@ h1{
     linear-gradient(135deg, rgba(125,211,252,.45), rgba(167,139,250,.35)) border-box;
   border: 1px solid transparent;
   box-shadow: 0 16px 40px rgba(0,0,0,.28);
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition: box-shadow .25s ease;
 }
 
 .profile-card:hover{
-  transform: translateY(-4px);
   box-shadow: 0 22px 60px rgba(0,0,0,.40);
 }
 

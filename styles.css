@@ -546,14 +546,4 @@ h1{
   .contact-line .muted{ width: auto; margin-right: 10px; }
 }
 
-.profile-card {
-  padding: 0;
-  overflow: hidden;
-}
 
-.profile-photo {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}

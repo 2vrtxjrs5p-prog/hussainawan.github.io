@@ -516,6 +516,12 @@ h1{
   border: 1px solid transparent;
   box-shadow: 0 16px 40px rgba(0,0,0,.28);
    transition: transform .25s ease, box-shadow .25s ease;
+   
+}
+
+.profile-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 22px 60px rgba(0,0,0,.40);
 }
 
 .profile-photo{
